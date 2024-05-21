@@ -115,6 +115,5 @@ Componentes
   
 ### DAaas Diagram
 
-[Diagrama](Diagrama.drawio)
 
-![Diagrama](Diagrama.png)
+![Diagrama](Diagrama_UNVotes.png)
