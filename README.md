@@ -23,4 +23,18 @@ A continuación, se presenta el diagrama de flujo asociado al proceso de generac
 
 ![Screenshot workflow UN   ICJ](https://github.com/pardo2410/ProyectoFinalBootcampBigData/assets/10873597/966d07c9-2749-4289-82ad-e3c271d1576f)
 
+## Objetivo del Modelo
+
+El objetivo principal del modelo es predecir, a través de un análisis de sentimiento, cuál será el resultado asociado a las votaciones de la opinión consultiva ([A/Res/77/247](https://n2300468.pdf)). Esta opinión consultiva, que actualmente está en curso en la Corte Internacional de Justicia, busca dar respuesta a dos preguntas relacionadas con el fallo de 2004:
+
+a) ¿Cuáles son las consecuencias jurídicas que se derivan de que Israel continúe violando el derecho del pueblo palestino a la libre determinación, de sus prolongados actos de ocupación, asentamiento y anexión del territorio palestino ocupado desde 1967, incluidas las medidas destinadas a alterar la composición demográfica, el carácter y el estatuto de la Ciudad Santa de Jerusalén, y de la aprobación por Israel de legislación y medidas discriminatorias conexas?
+
+b) ¿Cómo afectan las políticas y prácticas de Israel mencionadas en el párrafo 18 a) al estatuto jurídico de la ocupación y qué consecuencias jurídicas se derivan de ese estatuto para todos los Estados y para las Naciones Unidas?
+
+Para ello, ampliamos el modelo agregando los alegatos [orales](https://www.icj-cij.org/case/186/oral-proceedings) y [escritos](https://www.icj-cij.org/case/186/written-proceedings) correspondientes a la opinión consultiva de 2024.
+
+El modelo seleccionado para realizar el análisis es BERT (Bidirectional Encoder Representations from Transformers). BERT está diseñado para entender el contexto de una palabra en una frase leyendo en ambas direcciones (izquierda a derecha y derecha a izquierda). Esto permite una comprensión más precisa del lenguaje natural, lo cual es esencial para interpretar textos legales complejos como las opiniones consultivas.
+
+Adicionalmente, decidimos implementar un modelo de Preguntas y Respuestas (Q&A) basándonos en la salida del modelo BERT para responder las preguntas teniendo en cuenta la información suministrada en los corpus.
+
 
