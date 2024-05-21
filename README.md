@@ -11,7 +11,10 @@ En el proceso de investigación, decidimos abordar el análisis de las votacione
 
 Partimos del dataset creado por la Harvard University DataVerse y el repositorio denominado [United Nations General Assembly Voting Data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl%3A1902.1%2F12379).
 
-Debido a la relevancia del tema, decidimos enfocarnos en las votaciones asociadas al conflicto palestino y, específicamente, en las opiniones consultivas relacionadas con este asunto. 
+Debido a la relevancia del tema, decidimos enfocarnos en las votaciones asociadas al conflicto palestino y, específicamente, en las opiniones consultivas relacionadas con este asunto.
+
+![image](https://github.com/pardo2410/ProyectoFinalBootcampBigData/assets/10873597/abd3e191-3d00-4a39-9d6e-7f5336c048c5)
+
 
 Después de investigar, encontramos que la Asamblea General de las Naciones Unidas puede remitir cierto tipo de preguntas a las instituciones miembros para recibir valoraciones expertas sobre temas como salud, economía o derecho internacional, entre otros. Por tanto, enfocamos nuestros esfuerzos en realizar un análisis de NLP utilizando documentos asociados a la opinión consultiva de 2004 ([A/ES-10/273](https://documents.un.org/doc/undoc/gen/n04/419/86/pdf/n0441986.pdf?token=Vp4AGGksBar61a46IO&fe=true)), donde la Asamblea solicitaba a la CIJ dar respuesta a la siguiente pregunta:
 
