@@ -18,3 +18,9 @@ Después de investigar, encontramos que la Asamblea General de las Naciones Unid
 > ¿Cuáles son las consecuencias jurídicas que se derivan de la construcción del muro que levanta Israel, la Potencia ocupante, en el territorio palestino ocupado, incluida Jerusalén oriental y sus alrededores, según se describe en el informe del Secretario General, teniendo en cuenta las normas y principios de derecho internacional, incluido el Cuarto Convenio de Ginebra de 1949 y las resoluciones pertinentes del Consejo de Seguridad y de la Asamblea General?
 
 Utilizamos como base para el entrenamiento los alegatos escritos ([Written Proceedings](https://www.icj-cij.org/index.php/case/131/written-proceedings)), alegatos orales ([Oral Proceedings](https://www.icj-cij.org/index.php/case/131/oral-proceedings)), la opinión consultiva ([Advisory Opinions](https://www.icj-cij.org/index.php/case/131/advisory-opinions)) y las opiniones separadas ([Separate Opinions](https://www.icj-cij.org/index.php/case/131/advisory-opinions)) de los jueces, con el fin de proporcionar suficiente información y contexto al modelo para realizar el proceso de inferencia.
+
+A continuación, se presenta el diagrama de flujo asociado al proceso de generación de una opinión consultiva. Este proceso abarca desde la solicitud inicial en la Asamblea General, su posterior procesamiento en la Corte Internacional de Justicia (CIJ), hasta su retorno para la votación de aceptación por parte de la Asamblea General de las Naciones Unidas.
+
+![Screenshot workflow UN   ICJ](https://github.com/pardo2410/ProyectoFinalBootcampBigData/assets/10873597/966d07c9-2749-4289-82ad-e3c271d1576f)
+
+
