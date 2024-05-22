@@ -1,0 +1,115 @@
+---
+title: "Análisis preliminar de las votaciones en las ONU"
+author: "Amado Martinez Cañada,Jorge Arrojo Macias,Santiago Bedoya Builes, Rolando Rodriguez Burgueño,Juan David Pardo Pinzon"
+format: html
+editor: visual
+---
+
+## Análisis preliminar de las votaciones en las Naciones Unidas
+
+La presente investigación tiene como objetivo llevar a cabo un análisis de clustering de las votaciones en la Asamblea General de las Naciones Unidas, focalizándose en las resoluciones vinculadas a los territorios ocupados por Israel desde una perspectiva de derechos humanos. Se pretende abarcar datos desde 1988 hasta 2023, agrupando las votaciones según el mandato de cada primer ministro israelí. De esta manera, se podrá trazar una línea temporal de las políticas adoptadas por el gobierno, observando el comportamiento y la afinidad de los estados que votaron a favor o en contra de Israel, así como la evolución del espectro político en un conflicto que se extiende por más de 36 años. Además, se buscará comparar estos datos con otras votaciones relacionadas con casos de ocupación en otros países con el fin de entender el panorama político global y determinar si existen votaciones en bloque.
+
+## Running Code
+
+```{r}
+# Establecer el directorio de trabajo si el archivo está en un directorio diferente
+# setwd("ruta/del/directorio")
+# Cargar el archivo UNVotes_2023.RData
+load("UNVotes_2023.RData")
+# Verificar los objetos cargados
+ls()
+
+# Convertir los datos en un dataframe
+datos <- as.data.frame(datos)
+
+# Filtrar los registros con el nombre específico en la columna 'short'
+filtered_data <- datos[datos$short == "TERRITORIES OCCUPIED BY ISRAEL--HUMAN RIGHTS", ]
+
+# Mostrar la tabla filtrada
+View(filtered_data)
+
+```
+
+```{r}
+# Cargar el paquete 'unvotes'
+library(unvotes)
+
+# Verificar si el conjunto de datos está disponible
+data_names <- data(package = "unvotes")$results[, "Item"]
+if ("unvotes" %in% data_names) {
+  # Si el conjunto de datos está disponible, cargarlo y visualizar los primeros registros
+  data("unvotes")
+  head(unvotes)
+} else {
+  print("El conjunto de datos 'unvotes' no está disponible.")
+}
+
+```
+
+```{r}
+library(unvotes)
+head(un_votes)
+```
+
+```{r}
+head(un_roll_calls)
+```
+
+```{r}
+un_roll_call_issues
+
+count(un_roll_call_issues, issue, sort = TRUE)
+```
+
+```{r}
+library(dplyr)
+
+joined <- un_votes %>%
+  inner_join(un_roll_calls, by = "rcid")
+
+joined
+
+```
+
+```{r}
+library(lubridate)
+
+by_country_year <- joined %>%
+  group_by(year = year(date), country) %>%
+  summarize(votes = n(),
+            percent_yes = mean(vote == "yes"))
+
+by_country_year
+```
+
+```{r}
+library(ggplot2)
+theme_set(theme_bw())
+
+countries <- c("United States of America", "India", "France")
+
+# there were fewer votes in 2013
+by_country_year %>%
+  filter(country %in% countries, year <= 2013) %>%
+  ggplot(aes(year, percent_yes, color = country)) +
+  geom_line() +
+  ylab("% of votes that are 'Yes'")
+```
+
+Para ajustar
+
+```{r}
+joined %>%
+  filter(country == "United States of America") %>%
+  inner_join(un_roll_call_issues, by = "rcid") %>%
+  group_by(year = year(date), issue) %>%
+  summarize(votes = n(),
+            percent_yes = mean(vote == "yes"), .groups = 'drop') %>%
+  filter(votes > 5) %>%
+  filter(!is.na(issue)) %>%  
+  ggplot(aes(year, percent_yes)) +
+  geom_point() +
+  geom_smooth(se = FALSE) +
+  facet_wrap(~ issue, drop = FALSE)
+
+```
