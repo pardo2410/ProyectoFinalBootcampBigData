@@ -17,6 +17,7 @@ El modelo BERT para clasificación mostró un rendimiento sobresaliente con una 
 
 Metricas:
 ![image](https://github.com/pardo2410/ProyectoFinalBootcampBigData/assets/10873597/78845095-1796-4442-aa35-de8ed9fbf702)
+
 Predicción 2024:
 ![image](https://github.com/pardo2410/ProyectoFinalBootcampBigData/assets/10873597/45c6b97b-6093-4512-82a6-1519a0d745f4)
 
@@ -26,6 +27,7 @@ Además de la clasificación, se implementó un modelo de Q&A utilizando BERT pa
 
 Modelo:
 ![image](https://github.com/pardo2410/ProyectoFinalBootcampBigData/assets/10873597/8e068c92-22ca-454f-9ea2-55e42058b5fd)
+
 Salida:
 ![image](https://github.com/pardo2410/ProyectoFinalBootcampBigData/assets/10873597/fba2d620-0bcf-4b23-b6b5-d4ce7ed87f00)
 
