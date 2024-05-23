@@ -1,4 +1,4 @@
-# Reporte: Modelo BERT para Clasificación y Q&A
+# [Reporte: Modelo BERT para Clasificación y Q&A](https://github.com/pardo2410/ProyectoFinalBootcampBigData/blob/main/05%20-%20Modelado/Modelo%20NLP%20Votaciones%20Naciones%20Unidas.ipynb)
 
 ## Resumen
 Este reporte detalla la implementación y evaluación de un modelo BERT para clasificación de secuencias en un conjunto de datos judiciales, así como su aplicación en un modelo de Question & Answering (Q&A) para responder preguntas específicas relacionadas con las opiniones consultivas de la Corte Internacional de Justicia (CIJ).
