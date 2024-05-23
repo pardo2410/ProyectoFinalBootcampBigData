@@ -91,3 +91,16 @@ En un principio utilizamos la librería [`PyPDF2`](https://pypdf2.readthedocs.io
 #### ***Dificultades encontradas***
 
 Principalmente, encontramos dificultades a la hora de tratar los Oral Proceedings. Esto, debido a la calidad de digitalización proporcionada por la ONU, los documentos no se procesaban correctamente con PyPDF2, lo que nos obligó a tener que revisar los archivos. Además, la falta de tiempo impidió que procesáramos las opiniones escritas (Written Proceedings), también por el mismo problema de digitalización, lo que limitó el alcance de nuestro dataset inicial
+
+## Archivos consolidados:
+
+La carpeta 'Consolidated Files' contiene documentos clave utilizados en el maquetado del modelo NLP:
+
+- **A.RES_77.247_301222.txt**: Texto completo de la solicitud de [Opinión Consultiva 2023](https://github.com/pardo2410/ProyectoFinalBootcampBigData/blob/main/01%20-%20Dataset/1.%20ICJ%20Inventario%20OC/2023/Resolution%20UN/A_RES_77_247-ES.pdf) por parte de la asamblea general, abarcando las preguntas individuales y los argumentos específicos para cada una de ellas.
+- **DatasetNLP-UN-ICJ-Consolidado.json**: Consolidado de los procedimientos orales de los años 2004 y 2023, incluyendo las opiniones de los jueces y los países, discriminando año.
+- **DatasetNLP-UN-ICJ-Q&A.json**: Archivo que contiene clasificada las respuestas de la corte en la [Opinión Consultiva del 2004](https://github.com/pardo2410/ProyectoFinalBootcampBigData/blob/main/01%20-%20Dataset/1.%20ICJ%20Inventario%20OC/2004/Advisory%20Opinions/131-20040709-ADV-01-00-EN.pdf)
+- **Oral_Proceeding_2004.json**: Documento que detalla las opiniones orales de los países correspondientes al año 2004.
+- **Oral_Proceeding_2023.json**: Similar al anterior pero referente al año 2023, con las opiniones de los países en el tema actual sucediente en Palestina.
+- **Question (a).txt y Question (b).txt**: Contienen las preguntas 'a' y 'b', respectivamente, junto con los argumentos que la Corte abordará en 2024.
+
+Decidimos hacer las consolidaciones de los archivos en pro del futuro modelo NLP que montaríamos, esto nos facilitó de sobremanera el manipular de manera ordenada los datos usados.
