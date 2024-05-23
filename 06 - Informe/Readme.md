@@ -16,9 +16,11 @@ El modelo fue entrenado durante 5 épocas, utilizando una estrategia de evaluaci
 El modelo BERT para clasificación mostró un rendimiento sobresaliente con una precisión del 95%, un recall perfecto del 100% y un F1-Score elevado del 96.97%. Además, la pérdida de entrenamiento y evaluación disminuyó de manera constante, indicando una convergencia efectiva del modelo. Sin embargo, la matriz de confusión reveló que el modelo cometió algunos errores en la clasificación de la clase 0.
 
 Metricas:
+
 ![image](https://github.com/pardo2410/ProyectoFinalBootcampBigData/assets/10873597/78845095-1796-4442-aa35-de8ed9fbf702)
 
 Predicción 2024:
+
 ![image](https://github.com/pardo2410/ProyectoFinalBootcampBigData/assets/10873597/45c6b97b-6093-4512-82a6-1519a0d745f4)
 
 
@@ -26,9 +28,11 @@ Predicción 2024:
 Además de la clasificación, se implementó un modelo de Q&A utilizando BERT para responder preguntas específicas sobre las opiniones consultivas de la CIJ. El modelo fue capaz de generar respuestas precisas para preguntas complejas, utilizando el contexto proporcionado en el conjunto de datos.
 
 Modelo:
+
 ![image](https://github.com/pardo2410/ProyectoFinalBootcampBigData/assets/10873597/8e068c92-22ca-454f-9ea2-55e42058b5fd)
 
 Salida:
+
 ![image](https://github.com/pardo2410/ProyectoFinalBootcampBigData/assets/10873597/fba2d620-0bcf-4b23-b6b5-d4ce7ed87f00)
 
 ## Conclusiones y Recomendaciones
