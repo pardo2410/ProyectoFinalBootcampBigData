@@ -40,7 +40,7 @@ Salida:
 - El modelo de Q&A también mostró un rendimiento prometedor en la generación de respuestas precisas.
 - Se identificó la falta de tiempo para expandir el archivo de contexto como una limitación, lo que podría mejorar la precisión y relevancia de las respuestas del modelo.
 - En términos generales, el modelo cumplió con nuestras expectativas para el análisis de los datos judiciales. Sin embargo, reconocemos la necesidad de enriquecerlo con una mayor cantidad de datos para asegurar que pueda generalizar de manera más precisa los casos negativos.
-- 
+  
 ## Próximos Pasos
 - Evaluar el modelo BERT con preguntas adicionales de las opiniones consultivas de la CIJ de 2024.
 - Explorar formas de mejorar la precisión del modelo de Q&A mediante la expansión del archivo de contexto y ajustes adicionales en la arquitectura del modelo.
