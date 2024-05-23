@@ -1,4 +1,4 @@
-# Proyecto Final de Bootcamp: Big Data, Machine Learning y AI
+# Proyecto Final de Bootcamp: Análisis de Sentimientos y Q&A Mediante el Modelo BERT para Opiniones Consultivas sobre el Conflicto Palestino en la UN-ICJ
 
 En el proceso de investigación, decidimos abordar el análisis de las votaciones nominales en la Asamblea General de la ONU desde 1946 hasta 2024. Nos centramos en el comportamiento de las votaciones en referencia a problemáticas de alta importancia a nivel mundial, tales como:
 
